@@ -27,10 +27,10 @@ function obtenerEstudiantes() {
     return $estudiantes;
 }
 
-// Función para cerrar la conexión
-function cerrarConexion() {
-    global $conn;
-    $conn->close();
-}
+$estudiantes = obtenerEstudiantes();
+echo json_encode($estudiantes);
+
+// Cerrar la conexión
+$conn->close();
 ?>
 

@@ -8,6 +8,9 @@
 <body>
     <h1>CRUD Estudiantes</h1>
 
+    <button onclick="cargarEstudiantes()">Cargar Estudiantes</button>
+
+    <!-- Div para mostrar los estudiantes -->
     <div id="estudiantes"></div>
 
     <script>
@@ -23,9 +26,8 @@
                 document.getElementById('estudiantes').innerHTML = estudiantesHTML;
             });
         }
-
-        // Cargar estudiantes al cargar la página
-        window.onload = cargarEstudiantes;
     </script>
+
+    
 </body>
 </html>
